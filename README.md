@@ -77,16 +77,21 @@ mkdir -p assets/thumbnails
 mkdir -p storage
 ```
 
+6. **Setup Temporal**
+```bash
+brew install temporal
+```
+
 ### Running Locally
 
 1. **Start Temporal server**
 ```bash
-docker-compose up -d temporal
+temporal server start-dev
 ```
 
-2. **Start Vector DB**
+2. **Run  Server**
 ```bash
-docker-compose up -d vector_db
+uvicorn app.main:app --reload
 ```
 
 3. **Run development workers**
