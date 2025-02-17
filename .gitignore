@@ -1,0 +1,15 @@
+# Ignore all files in the storage directory
+storage/*
+
+# Ignore all files in the .env directory
+.env
+
+# Python
+.venv/
+
+# Temporal
+.temporal/
+
+__pycache__/
+logs/
+.DS_Store
